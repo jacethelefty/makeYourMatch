@@ -72,6 +72,7 @@ $('.hearts, .diamonds').click(function(){
 
           drop: function() {
               counter++;
+       //     ui.draggable.remove();  I WANT THIS TO REMOVE EACH CARD AFTER DROPPED IN BANK WHILE STILL KEEPING COUNT BUT CANT GET TO WORK
               if (counter == limit) {
                   alert('You are the Winner of Make Your Match!');
                   $(this).droppable("disable");
