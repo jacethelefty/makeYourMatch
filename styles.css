@@ -202,6 +202,7 @@ body{
     border: none;
     cursor: pointer;
     transition: 0.5s all ease-in 0s;
+    padding: 0 4px;
   }
   #shuffle{
     float: left;
