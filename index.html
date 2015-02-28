@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<title>Deck -o- Cards</title>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main class="main">
+
+<section class="gametitle">
+  <h1>Make Your Match</h1>
+  <h4 id="titlehelper">Two Person Memory Game</h4>
+  <h4 id="titlehelper">(From the team that brought you the teacher acclaimed Guess Battle!)</h4>
+</section>
+<section class="gamerules">
+  <h1 class="rules">Rules of Play</h1>
+    <p>1. Click the Shuffle Button to Reset Board. (Not Required)</p>
+    <p>2. Flip over two opposite suit black cards (Player 1) or two opposite suit red (Player 2) cards.</p>
+    <p>3. If the opposite card numbers match, drag them to your bank, and then take another turn.</p>
+    <p>4. If they don't match, flip them both back over and pass the turn to your opponent.</p>
+    <p>5. When the final matches have been made a winner will be declared after your last deposit in the bank!</p>
+</section>
+
+<section class='decklaid'>
+  <ul id="deck" class="ui-widget-content"></ul>
+</section>
+
+<section class='deckdrop1'>
+  <div class="left ui-widget-header" id="droppable"><h3>Drop Spade and Club Pairs Here</h3></div>
+</section>
+
+<section class="controls">
+  <h2 class="cntrlh2">Controls</h2>
+  <button id="shuffle">Shuffle</button>
+  <button id="flipAll">Flip All</button>
+  <button id="reset">Reset Game</button>
+</section>
+
+<section class='deckdrop2'>
+  <div class="left ui-widget-header" id="droppable2"><h3>Drop Diamond and Heart Pairs Here</h3></div>
+</section>
+
+
+
+
+</main>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
+
