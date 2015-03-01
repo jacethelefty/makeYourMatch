@@ -30,9 +30,9 @@ setTimeout(shuffle, 100, m);
 };
 var deck = new Deck();
 
-$( "li:contains('H')" ).css("border-color","red");
+$( "li:contains('H')" ).css("border-color","#E64C10");
 $( "li:contains('H')" ).addClass('hearts');
-$("li:contains('D')").css("border-color","red");
+$("li:contains('D')").css("border-color","#E64C10");
 $( "li:contains('D')" ).addClass('diamonds');
 $( "li:contains('C')" ).addClass('clubs');
 $( "li:contains('S')" ).addClass('spades');
@@ -51,16 +51,17 @@ $('#shuffle').click(function(){
 
 $('#flipAll').click(function(){
   $('li').toggleClass('liflip');
-  $('.hearts, .diamonds').toggleClass('liflip2');
+  $('li').toggleClass('liflip2');
 });
 
 $( "li" ).click(function() {
 $( this ).toggleClass( "liflip" );
+$( this ).toggleClass( "liflip2" );
 });
 
-$('.hearts, .diamonds').click(function(){
-  $(this).toggleClass('liflip2');
-});
+function winner(){
+    $('.winnerwindow').css('display', 'block').show(1000);
+  }
 
   $( "li" ).draggable({stack: '.spades, .hearts, .clubs, .diamonds', revert: 'invalid', opacity: 0.4, cursor: 'move'});
 
@@ -74,7 +75,7 @@ $('.hearts, .diamonds').click(function(){
               counter++;
        //     ui.draggable.remove();  I WANT THIS TO REMOVE EACH CARD AFTER DROPPED IN BANK WHILE STILL KEEPING COUNT BUT CANT GET TO WORK
               if (counter == limit) {
-                  alert('You are the Winner of Make Your Match!');
+                  winner();
                   $(this).droppable("disable");
               }
           }
@@ -89,7 +90,7 @@ $('.hearts, .diamonds').click(function(){
           drop: function() {
               counter++;
               if (counter == limit) {
-                  alert('You are the Winner of Make Your Match!');
+                  $winner();
                   $(this).droppable("disable");
               }
           }

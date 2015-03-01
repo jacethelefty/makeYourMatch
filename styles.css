@@ -22,20 +22,21 @@
 
 }
 body{
-  background-color: #000;
+  background-color: #413F33;
 }
   .main{
     background-image: url('imgs/greyzz.png');
     display: block;
     margin: 0 0 0 -3px;
     width: 100%;
-    border: 4px solid #000;
+    border: 4px solid #413F33;
+    position: relative;
   }
   li{
     list-style: none;
     width: 80px;
     height: 100px;
-    border: 3px double black;
+    border: 3px double #413F33;
     display: inline-block;
     margin: 10px;
     z-index: 100;
@@ -45,7 +46,7 @@ body{
   button{
     font-size: 1.5em;
     font-family: sans-serif;
-    background-color: #000;
+    background-color: #413F33;
     color: #fff;
     padding: 4px 0px;
     z-index: 100;
@@ -62,7 +63,7 @@ body{
   }
   li{
     background-repeat:no-repeat;
-    color: #fff;
+    color: #413F33
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -74,7 +75,6 @@ body{
     box-shadow: 0 0 5px #888;
   }
   .liflip {
-    color: #000;
     -moz-transform: scaleX(1);
     -o-transform: scaleX(1);
     -webkit-transform: scaleX(1);
@@ -91,40 +91,37 @@ body{
   background-repeat: no-repeat;
   z-index: 10;
   }
-  .hearts, .diamonds{
-    background-color: #000;
-    color: #000;
-  }
-  .clubs, .spades{
+  .hearts, .diamonds, .clubs, .spades{
     background-color: #fff;
+    color: #fff;
   }
 
   .liflip2{
-    color:#fff;
+    color:#413F33
   }
 
   .hearts {
     height: 120px;
     max-height: 120px;
-    background-position: -310px 23px;
+    background-position: -9px 16px;
   }
 
   .diamonds {
     height: 120px;
     max-height: 120px;
-    background-position: -209px 14px;
+    background-position: -101px 14px;
   }
 
   .clubs {
     height: 120px;
     max-height: 120px;
-    background-position: -104px 14px;
+    background-position: -299px 22px;
   }
 
   .spades {
     height: 147px;
     max-height: 120px;
-    background-position: -4px 14px;
+    background-position: -190px 7px;
   }
   .left{
     background-color: #000;
@@ -140,7 +137,7 @@ body{
 
   .gametitle{
     width:16%;
-    background-color: #ccc;
+    background-color: #DDD;
     opacity: 1;
     position: fixed;
     top: 60px;
@@ -149,15 +146,14 @@ body{
   }
   .gamerules{
     width:16%;
-    background-color: #ccc;
+    background-color: #DDD;
     opacity: 1;
     position: fixed;
     top: 60px;
     right: 40px;
     padding: 4px;
-    border: 2px solid #000;
+    border: 2px solid #413F33;
   }
-
   .decklaid{
     width: 960px;
     min-width: 960px;
@@ -166,37 +162,37 @@ body{
   .deckdrop1{
     width:23%;
     height:200px;
-    background-color: #ccc;
+    background-color: #DDD;
     opacity: 1;
     position: fixed;
-    bottom: 20px;
-    left: 5px;
+    bottom: 10px;
+    left: 9px;
   }
   .deckdrop2{
     width:23%;
     height:200px;
-    background-color: #ccc;
+    background-color: #DDD;
     opacity: 1;
     position: fixed;
-    bottom: 20px;
-    right: 5px;
+    bottom: 10px;
+    right: 7px;
   }
   .controls{
-    width:20%;
-    height:80px;
+    width:400px;
+    height:140px;
     background-color: #ccc;
     opacity: 1;
     position: fixed;
-    bottom: 4px;
+    bottom: 10px;
     right: 36%;
-    padding: 20px 50px;
-    border: 3px solid #000;
+    border: 3px solid #413F33;
   }
   #hide{
     display: none;
   }
   .cntrlh2{
-    margin-top: -15px;
+    margin: 10px 0 0 100px;
+    font-size: 2em;
   }
   #shuffle, #flipAll, #reset{
     font-family: 'nexa_rust_sansblack';
@@ -204,31 +200,35 @@ body{
     cursor: pointer;
     transition: 0.5s all ease-in 0s;
     padding: 0 4px;
+    background-color: #413F33;
   }
   #shuffle{
     float: left;
-    margin:-6px 0 0 -30px;
-    color: red;
-    opacity: 0.8;
+    margin:14px 0 0 10px;
+    background-color: #000;
+    color: #E8D4AF;
+    opacity: 0.7;
+    font-size: 2em;
   }
   #flipAll, #reset{
     float: right;
-    margin-right: -30px;
+    margin-right: 10px
+  }
+  #reset{
+    margin-top: 10px;
   }
   #flipAll{
-    margin: -35px -30px 6px 0;
-
+    margin: 14px 10px 0 0;
   }
 
   #shuffle:hover{
     color: #fff;
-    border: 2px solid red;
   }
   #flipAll:hover, #reset:hover{
-    color: red;
+    color: #E8D4AF;
   }
 
-  li.ui-draggable-dragging { border: 5px solid blue; }
+  li.ui-draggable-dragging { border: 5px solid #ED4D12; }
 
   #droppable, #droppable2 {
   background-image: url('imgs/suits.png');
@@ -239,27 +239,26 @@ body{
   }
 
   #droppable{
-    background-position: 2px 60px;
+    background-position: -188px 60px;
     width:200px;
 
   }
   #droppable2{
-    background-position: -200px 60px;
+    background-position: 15px 60px;
     width:200px;
     float: right;
     margin-right: 50px;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
   }
   .border{
-    border: 5px solid red;
+    border: 5px solid #ED4D12;
   }
   h1, h2, h3{
     font-family: 'nexa_rust_slabblack_shadow_01';
+    color: #413F33;
   }
   h1{
-
-    color:#000;
     font-size: 3em;
     margin: 5px 0 0 4px;
     text-align: center;
@@ -281,10 +280,14 @@ body{
     margin-top: -2px;
     font-family: 'nexa_rust_sansblack';
   }
+  h4{
+    color:#413F33;
+  }
   p{
     width: 95%;
     display: block;
     margin: 10px auto;
+    color:#413F33;
   }
   p:first-of-type{
     margin-top: 20px;
@@ -293,6 +296,27 @@ body{
   font-size: 150%;
   font-weight: bold;
 }
+
+.winnerwindow{
+  width: 800px;
+  height: 500px;
+  border: 10px solid #413F33;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 20%;
+  z-index: 200;
+  font-size: 1.25em;
+  padding-top: 150px;
+  text-align: center;
+}
+#winner{
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+
 @media (max-width: 1350px) {
   li{
     margin: 10px 4px;
