@@ -90,7 +90,7 @@ function winner(){
           drop: function() {
               counter++;
               if (counter == limit) {
-                  $winner();
+                  winner();
                   $(this).droppable("disable");
               }
           }
