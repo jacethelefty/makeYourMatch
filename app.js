@@ -73,7 +73,8 @@ function winner(){
 
           drop: function() {
               counter++;
-       //     ui.draggable.remove();  I WANT THIS TO REMOVE EACH CARD AFTER DROPPED IN BANK WHILE STILL KEEPING COUNT BUT CANT GET TO WORK
+       //     ui.draggable.remove();  I WANT THIS TO REMOVE EACH CARD AFTER
+       //     DROPPED IN BANK WHILE STILL KEEPING COUNT BUT CANT GET TO WORK
               if (counter == limit) {
                   winner();
                   $(this).droppable("disable");
@@ -100,6 +101,10 @@ function winner(){
 
   $('#reset').click(function(){
     refreshPage();
+  });
+
+  $('#closewin').click(function(){
+    $('.winnerwindow').hide('slow');
   });
 
   /* RELOAD PAGE */
