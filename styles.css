@@ -1,311 +1,311 @@
 @font-face {
-    font-family: 'nexa_rust_slabblack_shadow_01';
-    src: url('fonts/NexaRustSlab-BlackShadow01.eot');
-    src: url('fonts/NexaRustSlab-BlackShadow01.eot?#iefix') format('embedded-opentype'),
-         url('fonts/NexaRustSlab-BlackShadow01.woff2') format('woff2'),
-         url('fonts/NexaRustSlab-BlackShadow01.woff') format('woff'),
-         url('fonts/NexaRustSlab-BlackShadow01.ttf') format('truetype'),
-         url('fonts/NexaRustSlab-BlackShadow01.svg#nexa_rust_slabblack_shadow_01') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'nexa_rust_slabblack_shadow_01';
+  src: url('fonts/NexaRustSlab-BlackShadow01.eot');
+  src: url('fonts/NexaRustSlab-BlackShadow01.eot?#iefix') format('embedded-opentype'),
+       url('fonts/NexaRustSlab-BlackShadow01.woff2') format('woff2'),
+       url('fonts/NexaRustSlab-BlackShadow01.woff') format('woff'),
+       url('fonts/NexaRustSlab-BlackShadow01.ttf') format('truetype'),
+       url('fonts/NexaRustSlab-BlackShadow01.svg#nexa_rust_slabblack_shadow_01') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'nexa_rust_sansblack';
-    src: url('fonts/NexaRustSans-Black.eot');
-    src: url('fonts/NexaRustSans-Black.eot?#iefix') format('embedded-opentype'),
-         url('fonts/NexaRustSans-Black.woff2') format('woff2'),
-         url('fonts/NexaRustSans-Black.woff') format('woff'),
-         url('fonts/NexaRustSans-Black.ttf') format('truetype'),
-         url('fonts/NexaRustSans-Black.svg#nexa_rust_sansblack') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'nexa_rust_sansblack';
+  src: url('fonts/NexaRustSans-Black.eot');
+  src: url('fonts/NexaRustSans-Black.eot?#iefix') format('embedded-opentype'),
+       url('fonts/NexaRustSans-Black.woff2') format('woff2'),
+       url('fonts/NexaRustSans-Black.woff') format('woff'),
+       url('fonts/NexaRustSans-Black.ttf') format('truetype'),
+       url('fonts/NexaRustSans-Black.svg#nexa_rust_sansblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
 
 }
 body{
   background-color: #413F33;
 }
-  .main{
-    background-image: url('imgs/greyzz.png');
-    display: block;
-    margin: 0 0 0 -3px;
-    width: 100%;
-    border: 4px solid #413F33;
-    position: relative;
-    border-radius: 40px;
-  }
-  li{
-    list-style: none;
-    width: 80px;
-    height: 100px;
-    border: 3px double #413F33;
-    display: inline-block;
-    margin: 10px;
-    z-index: 100;
-    position: relative;
-    font-size: 2em;
-    background-repeat:no-repeat;
-    color: #413F33
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-     -ms-filter: "FlipH";
-     -moz-box-shadow: 0 0 5px #888;
-    -webkit-box-shadow: 0 0 5px#888;
-    box-shadow: 0 0 5px #888;
-    border-radius: 2px;
-  }
-  button{
-    font-size: 1.5em;
-    font-family: sans-serif;
-    background-color: #413F33;
-    color: #fff;
-    padding: 4px 0px;
-    z-index: 100;
-  }
-  .royalty{
-    text-align: right;
-    font-family: serif;
-  }
-  ul{
-    margin-left: 0px;
-    margin-top: 15px;
-    border:none;
-    z-index: 100;
-  }
-  .liflip {
-    -moz-transform: scaleX(1);
-    -o-transform: scaleX(1);
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-  }
-  .ui-widget-content {
-    border: none;
-    background: none;
-  }
-  .hearts, .diamonds, .clubs, .spades {
-  background-image: url('imgs/suits.png');
-  background-repeat: no-repeat;
-  z-index: 10;
-  }
-  .hearts, .diamonds, .clubs, .spades{
-    background-color: #fff;
-    color: #fff;
-  }
-
-  .liflip2{
-    color:#413F33
-  }
-
-  .hearts {
-    height: 120px;
-    max-height: 120px;
-    background-position: -9px 16px;
-  }
-
-  .diamonds {
-    height: 120px;
-    max-height: 120px;
-    background-position: -101px 14px;
-  }
-
-  .clubs {
-    height: 120px;
-    max-height: 120px;
-    background-position: -299px 22px;
-  }
-
-  .spades {
-    height: 147px;
-    max-height: 120px;
-    background-position: -190px 7px;
-  }
-  .left{
-    background-color: #000;
-    border: 3px solid #fff;
-    opacity: 0.7;
-    float: left;
-    width:140px;
-    height: 160px;
-    margin: 40px 0 0 40px;
-  }
-
-  .ui-widget-header {background-image: none;}
-
-  .gametitle, .gamerules, #droppable, #droppable2{
-    border-radius: 3px;
-  }
-
-  .gametitle{
-    width:16%;
-    background-color: #DDD;
-    opacity: 1;
-    position: fixed;
-    top: 60px;
-    left: 30px;
-    padding: 4px;
-  }
-  .gamerules{
-    width:16%;
-    background-color: #DDD;
-    opacity: 1;
-    position: fixed;
-    top: 60px;
-    right: 40px;
-    padding: 4px;
-    border: 2px solid #413F33;
-  }
-  .decklaid{
-    width: 960px;
-    min-width: 960px;
-    margin: 10px auto;
-  }
-  .deckdrop1, .deckdrop2{
-    border-radius: 5px;
-  }
-
-  .deckdrop1{
-    width:23%;
-    height:200px;
-    background-color: #DDD;
-    opacity: 1;
-    position: fixed;
-    bottom: 10px;
-    left: 9px;
-  }
-  .deckdrop2{
-    width:23%;
-    height:200px;
-    background-color: #DDD;
-    opacity: 1;
-    position: fixed;
-    bottom: 10px;
-    right: 7px;
-  }
-  .controls{
-    width:400px;
-    height:140px;
-    background-color: #ccc;
-    opacity: 1;
-    position: fixed;
-    bottom: 10px;
-    right: 36%;
-    border: 3px solid #413F33;
-    border-radius: 3px;
-  }
-  #hide{
-    display: none;
-  }
-  .cntrlh2{
-    margin: 10px 0 0 100px;
-    font-size: 2em;
-  }
-  #shuffle, #flipAll, #reset, #closewin{
-    font-family: 'nexa_rust_sansblack';
-    border: none;
-    cursor: pointer;
-    transition: 0.5s all ease-in 0s;
-    padding: 0 4px;
-    background-color: #413F33;
-    border-radius: 3px;
-  }
-  #shuffle{
-    float: left;
-    margin:14px 0 0 10px;
-    background-color: #000;
-    color: #E8D4AF;
-    opacity: 0.7;
-    font-size: 2em;
-  }
-  #flipAll, #reset{
-    float: right;
-    margin-right: 10px
-  }
-  #reset{
-    margin-top: 10px;
-  }
-  #closewin{
-    margin-top: 70px;
-  }
-  #flipAll{
-    margin: 14px 10px 0 0;
-  }
-
-  #shuffle:hover{
-    color: #fff;
-  }
-  #flipAll:hover, #reset:hover, #closewin:hover{
-    color: #E8D4AF;
-  }
-
-  li.ui-draggable-dragging { border: 5px solid #ED4D12; }
-
-  #droppable, #droppable2 {
-  background-image: url('imgs/suits.png');
-  background-repeat: no-repeat;
+.main{
+  background-image: url('imgs/greyzz.png');
+  display: block;
+  margin: 0 0 0 -3px;
+  width: 100%;
+  border: 4px solid #413F33;
+  position: relative;
+  border-radius: 40px;
+}
+li{
+  list-style: none;
+  width: 80px;
+  height: 100px;
+  border: 3px double #413F33;
+  display: inline-block;
+  margin: 10px;
+  z-index: 100;
+  position: relative;
+  font-size: 2em;
+  background-repeat:no-repeat;
+  color: #413F33
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+   -ms-filter: "FlipH";
+   -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
+  border-radius: 2px;
+}
+button{
+  font-size: 1.5em;
+  font-family: sans-serif;
+  background-color: #413F33;
+  color: #fff;
+  padding: 4px 0px;
+  z-index: 100;
+}
+.royalty{
+  text-align: right;
+  font-family: serif;
+}
+ul{
+  margin-left: 0px;
+  margin-top: 15px;
+  border:none;
+  z-index: 100;
+}
+.liflip {
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.ui-widget-content {
+  border: none;
+  background: none;
+}
+.hearts, .diamonds, .clubs, .spades {
+background-image: url('imgs/suits.png');
+background-repeat: no-repeat;
+z-index: 10;
+}
+.hearts, .diamonds, .clubs, .spades{
   background-color: #fff;
+  color: #fff;
+}
+
+.liflip2{
+  color:#413F33
+}
+
+.hearts {
+  height: 120px;
+  max-height: 120px;
+  background-position: -9px 16px;
+}
+
+.diamonds {
+  height: 120px;
+  max-height: 120px;
+  background-position: -101px 14px;
+}
+
+.clubs {
+  height: 120px;
+  max-height: 120px;
+  background-position: -299px 22px;
+}
+
+.spades {
+  height: 147px;
+  max-height: 120px;
+  background-position: -190px 7px;
+}
+.left{
+  background-color: #000;
+  border: 3px solid #fff;
+  opacity: 0.7;
+  float: left;
+  width:140px;
+  height: 160px;
+  margin: 40px 0 0 40px;
+}
+
+.ui-widget-header {background-image: none;}
+
+.gametitle, .gamerules, #droppable, #droppable2{
+  border-radius: 3px;
+}
+
+.gametitle{
+  width:16%;
+  background-color: #DDD;
   opacity: 1;
-  margin-top: 16px;
-  }
+  position: fixed;
+  top: 60px;
+  left: 30px;
+  padding: 4px;
+}
+.gamerules{
+  width:16%;
+  background-color: #DDD;
+  opacity: 1;
+  position: fixed;
+  top: 60px;
+  right: 40px;
+  padding: 4px;
+  border: 2px solid #413F33;
+}
+.decklaid{
+  width: 960px;
+  min-width: 960px;
+  margin: 10px auto;
+}
+.deckdrop1, .deckdrop2{
+  border-radius: 5px;
+}
 
-  #droppable{
-    background-position: -188px 60px;
-    width:200px;
+.deckdrop1{
+  width:23%;
+  height:200px;
+  background-color: #DDD;
+  opacity: 1;
+  position: fixed;
+  bottom: 10px;
+  left: 9px;
+}
+.deckdrop2{
+  width:23%;
+  height:200px;
+  background-color: #DDD;
+  opacity: 1;
+  position: fixed;
+  bottom: 10px;
+  right: 7px;
+}
+.controls{
+  width:400px;
+  height:140px;
+  background-color: #ccc;
+  opacity: 1;
+  position: fixed;
+  bottom: 10px;
+  right: 36%;
+  border: 3px solid #413F33;
+  border-radius: 3px;
+}
+#hide{
+  display: none;
+}
+.cntrlh2{
+  margin: 10px 0 0 100px;
+  font-size: 2em;
+}
+#shuffle, #flipAll, #reset, #closewin{
+  font-family: 'nexa_rust_sansblack';
+  border: none;
+  cursor: pointer;
+  transition: 0.5s all ease-in 0s;
+  padding: 0 4px;
+  background-color: #413F33;
+  border-radius: 3px;
+}
+#shuffle{
+  float: left;
+  margin:14px 0 0 10px;
+  background-color: #000;
+  color: #E8D4AF;
+  opacity: 0.7;
+  font-size: 2em;
+}
+#flipAll, #reset{
+  float: right;
+  margin-right: 10px
+}
+#reset{
+  margin-top: 10px;
+}
+#closewin{
+  margin-top: 70px;
+}
+#flipAll{
+  margin: 14px 10px 0 0;
+}
 
-  }
-  #droppable2{
-    background-position: 15px 60px;
-    width:200px;
-    float: right;
-    margin-right: 50px;
-    background-color: #fff;
-    color: #000;
-  }
-  .border{
-    border: 5px solid #ED4D12;
-  }
-  h1, h2, h3{
-    font-family: 'nexa_rust_slabblack_shadow_01';
-    color: #413F33;
-  }
-  h1{
-    font-size: 3em;
-    margin: 5px 0 0 4px;
-    text-align: center;
-  }
-  #titlehelper{
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 16px;
-  }
-  h2{
-    margin:4px 0 20px -26px;
-  }
-  .rules{
-    text-decoration: underline;
-    font-size: 1.45em;
-    margin-top: 10px;
-  }
-  h3{
-    margin-top: -2px;
-    font-family: 'nexa_rust_sansblack';
-  }
-  h4{
-    color:#413F33;
-  }
-  p{
-    width: 95%;
-    display: block;
-    margin: 10px auto;
-    color:#413F33;
-  }
-  p:first-of-type{
-    margin-top: 20px;
-  }
-  p::first-letter {
+#shuffle:hover{
+  color: #fff;
+}
+#flipAll:hover, #reset:hover, #closewin:hover{
+  color: #E8D4AF;
+}
+
+li.ui-draggable-dragging { border: 5px solid #ED4D12; }
+
+#droppable, #droppable2 {
+background-image: url('imgs/suits.png');
+background-repeat: no-repeat;
+background-color: #fff;
+opacity: 1;
+margin-top: 16px;
+}
+
+#droppable{
+  background-position: -188px 60px;
+  width:200px;
+
+}
+#droppable2{
+  background-position: 15px 60px;
+  width:200px;
+  float: right;
+  margin-right: 50px;
+  background-color: #fff;
+  color: #000;
+}
+.border{
+  border: 5px solid #ED4D12;
+}
+h1, h2, h3{
+  font-family: 'nexa_rust_slabblack_shadow_01';
+  color: #413F33;
+}
+h1{
+  font-size: 3em;
+  margin: 5px 0 0 4px;
+  text-align: center;
+}
+#titlehelper{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+h2{
+  margin:4px 0 20px -26px;
+}
+.rules{
+  text-decoration: underline;
+  font-size: 1.45em;
+  margin-top: 10px;
+}
+h3{
+  margin-top: -2px;
+  font-family: 'nexa_rust_sansblack';
+}
+h4{
+  color:#413F33;
+}
+p{
+  width: 95%;
+  display: block;
+  margin: 10px auto;
+  color:#413F33;
+}
+p:first-of-type{
+  margin-top: 20px;
+}
+p::first-letter {
   font-size: 150%;
   font-weight: bold;
 }
@@ -335,8 +335,10 @@ body{
   }
   .gametitle{
     left: 0;
+    top: 500px;
   }
   .gamerules{
     right: 0;
+    top: 500px;
   }
 }
